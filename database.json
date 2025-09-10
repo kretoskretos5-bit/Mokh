@@ -1,0 +1,22 @@
+{
+  "words": [
+    {
+      "word": "Merhaba",
+      "meaning": "مرحباً",
+      "videoUrl": "https://www.youtube.com/embed/abc123",
+      "audioUrl": "https://example.com/audio/merhaba.wav"
+    },
+    {
+      "word": "Teşekkür ederim",
+      "meaning": "شكراً لك",
+      "videoUrl": "https://www.youtube.com/embed/def456",
+      "audioUrl": "https://example.com/audio/tesekkur.wav"
+    },
+    {
+      "word": "Evet",
+      "meaning": "نعم",
+      "videoUrl": "https://www.youtube.com/embed/ghi789",
+      "audioUrl": "https://example.com/audio/evet.wav"
+    }
+  ]
+}
