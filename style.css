@@ -1,10 +1,26 @@
-body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-    color: #333;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    min-height: 100vh;
+// قائمة كلمات تركية مع معانيها ونطقها
+const words = [
+    { word: "Merhaba", meaning: "مرحبا", pronunciation: "ميرحبا" },
+    { word: "Teşekkürler", meaning: "شكراً", pronunciation: "تشكرلار" },
+    { word: "Evet", meaning: "نعم", pronunciation: "إيفيت" },
+    { word: "Hayır", meaning: "لا", pronunciation: "هاير" }
+];
+
+// دالة البحث
+function searchWord() {
+    const input = document.getElementById('searchInput').value.trim();
+    const resultSection = document.getElementById('resultSection');
+
+    const found = words.find(w => w.word.toLowerCase() === input.toLowerCase());
+
+    if (found) {
+        resultSection.innerHTML = `
+            <h2>النتيجة:</h2>
+            <p>الكلمة: <strong>${found.word}</strong></p>
+            <p>المعنى: ${found.meaning}</p>
+            <p>النطق: ${found.pronunciation}</p>
+        `;
+    } else {
+        resultSection.innerHTML = `<p>الكلمة غير موجودة.</p>`;
+    }
 }
-...
